@@ -1,4 +1,9 @@
 JkHomepage::Application.routes.draw do
+  
+  root :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+  match '/cv', :to => 'pages#cv'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
